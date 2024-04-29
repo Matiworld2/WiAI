@@ -3,6 +3,7 @@
 
 body {
   background-color: #dddd;
+  font-family: "Fira Sans Extra Condensed", sans-serif;
 }
 
 header {
@@ -30,6 +31,7 @@ hr{
   border: solid 1px #2A2C35;
   width: 90%;
   border-radius: 100%;
+  margin: 2.5rem 4rem;
 }
 
 nav ul {
@@ -49,7 +51,7 @@ nav li{
   border: solid 1px #2A2C35;
 }
 
-nav li:hover, #calc:hover{
+ nav li:hover, #calc:hover{
   background-color: rgb(200,200,200);
   transition: background-color 0.5s;
 }
@@ -61,16 +63,28 @@ nav a{
 }
 
 #calc{
-  padding: 1.25rem;
   background-color: #dcdc
 }
 
-/* Ukrycie zagnieżdżonej listy narzędzi */
-#calc {
-  display: none;
+#uul {
+  position: relative;
 }
 
-/* Pokazanie zagnieżdżonej listy narzędzi po najechaniu na link "Narzędzia" */
-nav ul > li:hover #cals {
+#calc {
+  display: none;
+  position: absolute;
+  margin-top: -3rem;
+  left: 17.3rem;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+#uul:hover #calc {
   display: block;
 }
+
+#calc li {
+  padding: 1.7rem 10rem;
+}
+

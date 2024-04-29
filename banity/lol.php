@@ -25,7 +25,7 @@
                     <li><a href="calc.php">Kalkulator</a></li>
                 </ul>
             </li>
-            <li><a href="kontakt.php">Kontakt</a></li>
+            <li><a href="">Kontakt</a></li>
         </ul>
     </nav>
 </body>
